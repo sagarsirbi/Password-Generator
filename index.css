@@ -1,0 +1,90 @@
+#title1 {
+    color: white;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+#title2 {
+    margin-top: 0;
+    color: #4ADF86;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Karla", serif; 
+    color: white;
+}
+
+body {
+    margin-left: 25px;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #1F2937;
+    min-width: 350px;
+}
+
+#generate-btn {
+    color: white;
+    background-color: #4ADF86;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Karla", serif; 
+}
+
+hr {
+    border: 0; /* Remove default border */
+    border-top: 2px solid #2F3E53;
+    box-shadow: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+#pass-len {
+    background-color: #2F3E53;
+    color: white;
+    font-family: "Karla", serif; 
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 225px;
+}
+
+.password-btn {
+    min-width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2F3E53;
+    color:#4ADF86;
+    font-family: "Karla", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap:10px
+    
+}
+
+body input {
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+}
+
