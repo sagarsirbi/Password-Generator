@@ -3,6 +3,12 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 const passwordOption = [document.getElementById("password1-option"), document.getElementById("password2-option")]
 const passwordLen = document.getElementById("pass-len")
+const sliderVal = document.getElementById("slider-val")
+const copyButtons = document.querySelectorAll(".copy-btn");
+
+function updateTextInput(val) {
+    sliderVal.textContent=`Password length: ${val}`; 
+  }
 
 generateBtn.addEventListener("click", function() {
     for (let btn=0; btn<passwordOption.length; btn++) {
@@ -14,18 +20,16 @@ generateBtn.addEventListener("click", function() {
     }
 })
 
-passwordOption.forEach(button => {
-    button.addEventListener("dblclick", function() { 
-        navigator.clipboard.writeText(button.textContent) 
-        .then(() => {
-            alert("Password copied to clipboard: " + button.textContent);
-        })
-        .catch(err => {
-            console.error("Failed to copy password:", err);
-        });
+copyButtons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+        const password = passwordOption[index].textContent;
+        if (password) {
+            navigator.clipboard.writeText(password)
+                .then(() => alert("Password copied to clipboard: " + password))
+                .catch((err) => console.error("Failed to copy password:", err));
+        }
     });
 });
-
 
 
 

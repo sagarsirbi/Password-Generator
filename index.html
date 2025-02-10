@@ -19,12 +19,19 @@
       <h1 id="title2">random password</h1>
       <h3>Never use an insecure password again.</h3>
       <div class="container">
-        <input type="range" min="5" max="15" value="10" id="pass-len" />
-        <button id="generate-btn">Generate</button>
+      <button class="password-btn" id="password1-option"></button>
+      <button class="copy-btn">COPY</button>
       </div>
-      <hr />
-      <button id="password1-option" class="password-btn"></button>
-      <button id="password2-option" class="password-btn"></button>
+      <div class="container">
+      <button class="password-btn" id="password2-option"></button>
+      <button class="copy-btn">COPY</button>
+      </div>
+      <i class="fa fa-copy" style="font-size:24px"></i>
+      <div class="container">
+            <input type="range" min="5" max="15" value="10" id="pass-len" onchange="updateTextInput(this.value)"/>
+            <p id="slider-val"></p>
+        </div>
+        <button id="generate-btn">GENERATE -></button>
     </div>
     <script src="index.js"></script>
   </body>

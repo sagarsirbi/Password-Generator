@@ -1,6 +1,6 @@
 #title1 {
     color: white;
-    font-family: "Karla", serif;
+    font-family: "JetBrains Mono", serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -10,20 +10,22 @@
 #title2 {
     margin-top: 0;
     color: #4ADF86;
-    font-family: "Karla", serif;
+    font-family: "JetBrains Mono", serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: bolder;
     font-style: normal;
 }
 
 h3 {
-    font-family: "Karla", serif; 
+    font-family: "JetBrains Mono", serif; 
     color: white;
+    font-weight:lighter;
+    font-size: medium;
 }
 
 body {
     margin: 0;
-    font-family: "Karla", serif;
+    font-family: "JetBrains Mono", serif;
     font-optical-sizing: auto;
     font-style: normal;
     background-color: #1F2937;
@@ -35,7 +37,7 @@ body {
 
 .main-container {
     width: 500px;
-    height: 300px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     border: 1px solid #4ADF86;
@@ -55,18 +57,27 @@ body {
     border: none;
     border-radius: 5px;
     padding: 10px;
-    font-family: "Karla", serif; 
+    font-family: "JetBrains Mono", serif; 
     cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.copy-btn {
+    color: white;
+    background-color: #4ADF86;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "JetBrains Mono", serif; 
+    font-size: x-small;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 #generate-btn:hover {
     background-color: #3ecf78; /* Slightly darker green on hover */
-}
-
-hr {
-    border: 0;
-    border-top: 2px solid #2F3E53;
-    width: 100%;
 }
 
 ::placeholder {
@@ -75,29 +86,33 @@ hr {
 
 #pass-len {
     background-color: #2F3E53;
-    color: white;
-    font-family: "Karla", serif; 
+    color: #3ecf78;
+    font-family: "JetBrains Mono", serif; 
     border: 1px solid #4ADF86;
     border-radius: 5px;
     padding: 5px 10px;
-    width: 100%; /* Makes input responsive */
+    width: 200px; /* Makes input responsive */
 }
 
 .password-btn {
     min-width: 150px;
+    min-height: 20px;
     height: 25px;
     border-radius: 5px;
     border: 1px solid #4ADF86;
     background-color: #2F3E53;
     color: #4ADF86;
-    font-family: "Karla", serif;
+    font-family: "JetBrains Mono", serif;
     margin-top: 5px;
     cursor: pointer;
 }
 
 .container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-small;
+    color: white;
     gap: 10px;
 }
 
