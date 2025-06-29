@@ -28,6 +28,6 @@ This **Password Generator** was built as part of my web development learning jou
 ---
 
 ## 📸 Screenshots
-
+![Password Generator UI](Password-generator.png "Password Generator UI")
 
 ---
